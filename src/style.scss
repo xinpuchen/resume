@@ -3,7 +3,7 @@
 
 $color-gray: #d1d1d1;
 $color-green: #00b38a;
-$font-family: 'Helvetica Neue', Helvetica, Arial, "Microsoft YaHei", sans-serif;
+$font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", sans-serif;
 
 * {
   @include box-sizing(border-box);
@@ -28,7 +28,7 @@ body {
 a {
   text-decoration: none;
   color: $color-green;
-  @include transition(all .2s ease-in-out);
+  @include transition(all 0.2s ease-in-out);
 }
 
 .last-modified {
@@ -113,7 +113,8 @@ a {
   .name {
     float: left;
     h1 {
-      font-family: "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", $font-family;
+      font-family: "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3",
+        $font-family;
       font-weight: 500;
       letter-spacing: 5px;
       @media screen and (max-width: 720px) {
@@ -175,7 +176,8 @@ a {
           @media print {
             color: #000;
           }
-          font-family: "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", $font-family;
+          font-family: "Lucida Grande", "Hiragino Sans GB",
+            "Hiragino Sans GB W3", $font-family;
           font-size: 14px;
           line-height: 22px;
           &:hover {
