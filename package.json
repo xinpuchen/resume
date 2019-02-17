@@ -1,13 +1,14 @@
 {
   "scripts": {
     "dev": "webpack-dev-server --open --hot",
-    "build": "NODE_ENV=production webpack --config webpack-dist.config.js",
-    "deploy": "gh-pages -d dist"
+    "deploy": "NODE_ENV=production webpack --config webpack-dist.config.js"
   },
   "devDependencies": {
     "autoprefixer": "^7.2.6",
+    "chrome-finder": "^1.0.5",
     "compass-mixins": "^0.12.10",
     "css-loader": "^0.28.11",
+    "end-webpack-plugin": "^1.0.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "gh-pages": "^1.2.0",
     "node-sass": "^4.5.3",
