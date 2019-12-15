@@ -4,6 +4,7 @@
 $color-gray: #d1d1d1;
 $color-green: #00b38a;
 $font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", sans-serif;
+$base-width: 948px;
 
 * {
   @include box-sizing(border-box);
@@ -20,7 +21,7 @@ body {
   background-color: #eee;
   overflow: auto;
   padding-top: 5px;
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: $base-width) {
     padding-top: 0;
   }
 }
@@ -31,47 +32,46 @@ a {
   @include transition(all 0.2s ease-in-out);
 }
 
-.last-modified {
-  position: absolute;
-  top: 30px;
-  left: 50%;
-  width: 1000px;
-  color: #bbb;
-  margin-left: -500px;
-  font-size: 12px;
-  text-align: right;
-  @media screen and (max-width: 1024px) {
-    display: none;
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: $base-width;
+  margin: 10px auto;
+  @media screen and (max-width: $base-width) {
+    margin: 0;
   }
-  @media print {
-    display: none;
-  }
-}
 
-.download-pdf {
-  position: absolute;
-  top: 30px;
-  left: 50%;
-  color: #bbb;
-  margin-left: -500px;
-  font-size: 12px;
-  text-align: right;
-  @media screen and (max-width: 1024px) {
-    display: none;
+  .download-pdf {
+    color: #bbb;
+    font-size: 12px;
+    cursor: pointer;
+    @media screen and (max-width: $base-width) {
+      display: none;
+    }
+    @media print {
+      display: none;
+    }
   }
-  @media print {
-    display: none;
+  .last-modified {
+    color: #bbb;
+    font-size: 12px;
+    @media screen and (max-width: $base-width) {
+      display: none;
+    }
+    @media print {
+      display: none;
+    }
   }
 }
 
 .content {
   position: relative;
-  width: 1024px;
-  margin: 50px auto;
+  width: $base-width;
+  margin: 0 auto 50px;
   @include border-radius(5px);
   background-color: #fff;
   overflow: hidden;
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: $base-width) {
     width: 100%;
     margin: 0;
     @include border-radius(0);
@@ -194,6 +194,9 @@ a {
             @media screen and (max-width: 720px) {
               margin: 5px 8px;
             }
+            @media print {
+              display: none;
+            }
           }
         }
       }
@@ -208,19 +211,6 @@ a {
   overflow: hidden;
   @media screen and (max-width: 720px) {
     padding: 20px 20px 50px;
-  }
-  .content-left,
-  .content-right {
-    width: 50%;
-    @media screen and (max-width: 1024px) {
-      width: 100%;
-    }
-  }
-  .content-left {
-    float: left;
-  }
-  .content-right {
-    float: right;
   }
   section {
     overflow: hidden;
@@ -366,7 +356,7 @@ a {
     display: inline-block;
     color: $color-gray;
     margin-bottom: 25px;
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: $base-width) {
       margin-top: 25px;
     }
   }
