@@ -219,15 +219,21 @@ a {
   .section-hd {
     position: relative;
     height: 32px;
-    margin: 10px auto 5px;
+    margin: 0 auto;
     overflow: hidden;
   }
   .section-bd {
     overflow: hidden;
     ul {
       li {
-        margin-top: 8px;
-        list-style: square inside;
+        line-height: 2;
+        list-style: inside;
+        > ul {
+          margin-left: 24px;
+          li {
+            list-style: circle inside;
+          }
+        }
       }
     }
 
@@ -269,21 +275,12 @@ a {
   }
   .item-hd {
     position: relative;
-    padding: 10px 0 5px;
+    padding: 10px 0;
     line-height: 20px;
     overflow: hidden;
     font-weight: 500;
     min-height: 30px;
     .item-time {
-      display: inline-block;
-      float: left;
-      width: 25%;
-      @media screen and (max-width: 720px) {
-        width: 100%;
-        margin-bottom: 5px;
-      }
-    }
-    .item-more {
       position: absolute;
       top: 10px;
       right: 0;
@@ -296,7 +293,7 @@ a {
     margin-bottom: 5px;
   }
   .item-des {
-    margin-bottom: 16px;
+    margin-bottom: 6px;
   }
   .section-content {
     text-align: justify;
@@ -324,11 +321,6 @@ a {
       margin: 2px;
       padding: 0 3px;
       background-color: #f6f6f6;
-    }
-  }
-  .practice {
-    .item-time {
-      width: 100%;
     }
   }
 }
