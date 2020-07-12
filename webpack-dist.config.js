@@ -1,6 +1,4 @@
 const path = require("path");
-const { spawnSync } = require("child_process");
-const findChrome = require("chrome-finder");
 const UglifyJsPlugin = require("webpack/lib/optimize/UglifyJsPlugin");
 const DefinePlugin = require("webpack/lib/DefinePlugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
@@ -22,6 +20,8 @@ const publishGhPages = () =>
   });
 
 module.exports = {
+  devtool: false,
+  entry: "./src/main.js",
   output: {
     path: outputPath,
     publicPath: "",
@@ -36,7 +36,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss$/,
+        test: /\.(sc|c)ss$/,
         // 提取出css
         loaders: ExtractTextPlugin.extract({
           fallback: "style-loader",
@@ -46,22 +46,10 @@ module.exports = {
         include: path.resolve(__dirname, "src")
       },
       {
-        test: /\.css$/,
-        // 提取出css
-        loaders: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          // 压缩css
-          use: ["css-loader?minimize", "postcss-loader"]
-        })
-      },
-      {
         test: /\.(gif|png|jpe?g|eot|woff|ttf|svg|pdf)$/,
         loader: "base64-inline-loader"
       }
     ]
-  },
-  entry: {
-    main: "./src/main.js"
   },
   plugins: [
     new DefinePlugin({
@@ -94,21 +82,7 @@ module.exports = {
       allChunks: true
     }),
     new EndWebpackPlugin(async () => {
-      // 自定义域名
-      // fs.writeFileSync(path.resolve(outputPath, "CNAME"), "xinpuchen.github.io/resume");
 
-      await publishGhPages();
-
-      // 调用 Chrome 渲染出 PDF 文件
-      const chromePath = findChrome();
-      spawnSync(chromePath, [
-        "--headless",
-        "--disable-gpu",
-        `--print-to-pdf=${path.resolve(outputPath, "resume.pdf")}`,
-        "https://xinpuchen.github.io/resume/" // 这里注意改成你的在线简历的网站
-      ]);
-
-      // 重新发布到 ghpages
       await publishGhPages();
     })
   ]
