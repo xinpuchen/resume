@@ -24,7 +24,7 @@
           </a>
         </li>
         <li>
-          <a href="tel:13871239989">
+          <a title="telephone" href="tel:13871239989">
             <span class="contact-link">13871239989</span>
             <span class="icon">
               <svg width="16px" height="16px" viewBox="0 0 1024 1024">

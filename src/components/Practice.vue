@@ -11,26 +11,24 @@
           <h3 class="item-name">
             猿辅导 - 前端研发工程师
           </h3>
-          <a class="item-time" href="https://www.yuanfudao.com/"
-            >2020.11~至今</a
-          >
+          <a class="item-time" href="https://www.yuanfudao.com/">2020.11~至今</a>
         </header>
         <div class="item-bd">
           <p class="item-des">
-            主要参与「教务运营」业务和负责「用户增长」业务的前端开发，包括：
+            围绕以 <a href="https://www.nanguakexue.com/">南瓜科学APP</a> 为核心的应用生态的前端开发，包括：
           </p>
           <ul class="section-content">
             <li>
-              与交互设计师从运营和辅导老师视角探讨教务平台的设计和交互，以减小业务复杂度和平台培训成本
+              参与后台管理系统的开发，包括课程、用户、订单、活动等模块，对产品运营起数据支撑的作用
             </li>
             <li>
-              通过埋点收集用户行为数据，以衡量和优化产品的投放与推广，指导产品向更有利的方向发展
+              参与教师管理平台的开发，包括老师、学员、班级、数据看板等模块，对教务运营起管理支撑的作用
             </li>
             <li>
-              通过对各页面添加性能监控，指导前端优化方向，以提高产品的用户体验
+              参与各平台投放落地页的开发，其中主要涉及到支付模块的接入、兼容和整合处理
             </li>
             <li>
-              通过接入异常监控和日志，对线上故障做到早发现、早解决、早避免，以提高产品的稳定性
+              负责用户增长相关业务的前端开发，包括分享裂变、抽奖活动、平台合作等
             </li>
           </ul>
         </div>
@@ -40,39 +38,24 @@
           <h3 class="item-name">
             青云QingCloud - 前端开发工程师
           </h3>
-          <a class="item-time" href="https://www.qingcloud.com/"
-            >2018.07~2020.11</a
-          >
+          <a class="item-time" href="https://www.qingcloud.com/">2018.07~2020.11</a>
         </header>
         <div class="item-bd">
           <p class="item-des">
-            参与基于 React 组件库的开发，包括：
+            参与 <a href="https://www.npmjs.com/package/@pitrix/lego-ui">lego-UI</a> 组件库和负责 <a href="https://www.qingcloud.com/products/express/">超融合云平台</a> 的前端开发，包括：
           </p>
           <ul class="section-content">
             <li>
-              参与讨论组件库开发流程和代码风格的规范制定，技术方案的选择与确立
+              参与前端团队开发流程和编码规范的制定并输出文档，统一团队代码规范，降低合作成本
             </li>
             <li>
-              复杂组件的 API 设计、组件的拆分、部分组件的开发和完成组件单元测试
+              lego-UI 组件库的开发和文档站点的建立，保证组件库的维护和团队间推广
             </li>
             <li>
-              组件库文档站点的建立和组件示例的完善，保证组件库的维护和团队间的推广
-            </li>
-          </ul>
-        </div>
-        <div class="item-bd">
-          <p class="item-des">
-            负责「超融合云平台」的前端开发，包括：
-          </p>
-          <ul class="section-content">
-            <li>
-              协调团队配合，包括产品、业务、设计、前端交互，确立技术选型和开发方案，新技术探索实践等
+              超融合云平台前端代理负责人，协调团队与产品、业务、设计配合，把握项目开发进度
             </li>
             <li>
-              脚手架搭建、中间层搭建、构建流程及优化、版本控制及管理、CI/CD
-            </li>
-            <li>
-              主导开发和二次封装基础组件、常用工具，支撑业务快速迭代，统一视觉规范
+              负责超融合云平台项目脚手架搭建、中间层搭建、构建流程及优化、版本控制及管理、CI/CD 等
             </li>
           </ul>
         </div>
