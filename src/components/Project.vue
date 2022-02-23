@@ -8,7 +8,7 @@
     <div class="section-bd">
       <div class="item">
         <header class="item-hd">
-          <h3 class="item-name">南瓜科学APP - 核心开发者</h3>
+          <h3 class="item-name">南瓜科学APP - 项目主R</h3>
         </header>
         <div class="item-bd">
           <ul>

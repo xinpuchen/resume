@@ -39,7 +39,7 @@
         </header>
         <div class="item-bd">
           <p class="item-des">
-            负责 <a href="https://www.qingcloud.com/products/express/">超融合云平台</a> 项目的前端开发和前端进度把控，包括：
+            负责 <a href="https://www.qingcloud.com/products/cloudExpress-hci/">超融合云平台</a> 项目的前端开发和前端进度把控，包括：
           </p>
           <ul class="section-content">
             <li>
