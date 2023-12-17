@@ -6,8 +6,7 @@
     </div>
     <div class="info">
       <ul class="basic">
-        <li>男 ｜ 26 岁 | 三年经验</li>
-        <li>本科 | 网络工程｜ 2015 ~ 2019</li>
+        <li>男｜28 岁｜2015~2019 本科</li>
         <li>武汉工程大学邮电与信息工程学院</li>
       </ul>
       <ul class="contact">
@@ -23,7 +22,7 @@
             </span>
           </a>
         </li>
-        <li>
+        <!-- <li>
           <a title="github" href="https://github.com/xinpuchen">
             <span class="contact-link">github.com/xinpuchen</span>
             <span class="icon">
@@ -34,7 +33,7 @@
               </svg>
             </span>
           </a>
-        </li>
+        </li> -->
         <li>
           <a title="email" href="mailto:xinpuchen@foxmail.com">
             <span class="contact-link">xinpuchen@foxmail.com</span>

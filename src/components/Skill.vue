@@ -1,14 +1,12 @@
 <template>
-  <div class="skill">
+  <div class="section">
     <header class="section-hd">
-      <span class="section-title-l"></span>
       <h2 class="section-title">专业技能</h2>
-      <span class="section-title-r"></span>
     </header>
     <div class="section-bd">
       <div class="item">
         <div class="item-bd">
-          <ul class="section-content">
+          <ul class="item-content">
             <li>
               掌握 CSS、HTML、常用布局，能写出富有 Web 语义化的网页结构
             </li>

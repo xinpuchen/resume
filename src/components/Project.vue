@@ -1,5 +1,5 @@
 <template>
-  <div class="project">
+  <div class="section">
     <header class="section-hd">
       <span class="section-title-l"></span>
       <h2 class="section-title">项目经历</h2>
