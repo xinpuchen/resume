@@ -6,10 +6,37 @@
     <div class="section-bd">
       <div class="item">
         <header class="item-hd">
+          <a class="item-name"  href="https://www.bytedance.com/">
+            字节跳动
+          </a>
+          <div class="item-time">2024.02 ~ 至今</div>
+        </header>
+        <div class="item-bd">
+          <div class="item-title">
+            一、Lark 主题官网
+          </div>
+          <ul class="item-content">
+            <li>
+              项目简介：利用程序化 SEO 实现流量与客户的获取
+            </li>
+            <li>
+              主要职责：负责 Lark 主题官网的性能优化和定时任务工程化接入
+            </li>
+            <li>
+              1. 优化站点性能，FCP 由 3.3S -> 1.8S、LCP 由 3.6S -> 2.2S
+            </li>
+            <li>
+              2. 工程化 Cronjob 定时任务接入流程，实现文章 JSON 数据的联动
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+        <header class="item-hd">
           <a class="item-name"  href="https://www.yuanfudao.com/">
             猿辅导
           </a>
-          <div class="item-time">2020.11 ~ 至今</div>
+          <div class="item-time">2020.11 ~ 2024.02</div>
         </header>
         <div class="item-bd">
           <div class="item-title">
@@ -93,8 +120,6 @@
           </ul>
         </div>
       </div>
-      <br />
-      <br />
       <div class="item">
         <header class="item-hd">
           <a class="item-name" href="https://www.qingcloud.com/">
